@@ -1,56 +1,81 @@
 * {
+    /* supprime les marges extérieures de tous les éléments */
     margin: 0;
+    /* supprime les marges intérieures de tous les éléments */
     padding: 0;
+    /* définit la police de caractères de tous les éléments */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* rend le défilement de la page plus fluide */
     scroll-behavior: smooth;
 }
 
 body {
+    /* définit la couleur de fond du corps de la page */
     background-color: #1080ff;
+    /* définit la couleur du texte du corps de la page */
     color: #fff;
 }
 
 .menu {
+    /* affiche les éléments du menu en ligne */
     display: flex;
     margin: 10px 0px;
     padding: 10px;
+    /* centre les éléments du menu verticalement */
     align-items: center;
+    /* centre les éléments du menu horizontalement */
     justify-content: center;
 }
 
 #navbar {
     background-color: #51dd00;
+    /* affiche les éléments de la barre de navigation en ligne */
     display: flex;
+    /* centre les éléments de la barre de navigation verticalement */
     align-items: center;
     padding: 10px;
+    /* arrondit les coins de la barre de navigation */
     border-radius: 20px;
+    /* fixe la position de la barre de navigation */
     position: fixed;
     margin: 10px;
+    /* ajoute une ombre à la barre de navigation */
     box-shadow: 0px 0px 70px 0px #0153b1;
 }
 
 header {
+    /* positionne l'en-tête par rapport à son élément parent */
     position: relative;
+    /* affiche les éléments de l'en-tête en ligne */
     display: flex;
+    /* centre les éléments de l'en-tête horizontalement */
     justify-content: center;
 }
 
 .menu li {
+    /* supprime les puces des éléments de liste du menu */
     list-style: none;
 }
 
 .menu li a {
+    /* supprime le soulignement des liens du menu */
     text-decoration: none;
+    /* définit la couleur des liens du menu */
     color: #fff;
+    /* rend le texte des liens du menu plus gras */
     font-weight: bold;
     padding: 10px;
     margin: 5px;
+    /* arrondit les coins des liens du menu */
     border-radius: 10px;
+    /* ajoute une transition lors du changement de couleur des liens du menu */
     transition: 0.3s linear;
 }
 
 .menu li a:hover {
+    /* définit la couleur de fond des liens du menu lors du survol de la souris */
     background-color: #fff;
+    /* définit la couleur du texte des liens du menu lors du survol de la souris */
     color: #51dd00;
 }
 
@@ -60,16 +85,28 @@ header {
 }
 
 .text-center {
+    /* centre le texte des éléments ayant cette classe */
     text-align: center;
 }
 
-
+/* 
+ vh et vw sont des unités de mesure relatives à la taille de la fenêtre du navigateur
+ 1vh correspond à 1% de la hauteur de la fenêtre du navigateur
+ 1vw correspond à 1% de la largeur de la fenêtre du navigateur 
+ Ces unités sont utiles pour créer des éléments qui s'adaptent à la taille de l'écran 
+*/
 .head-section {
+    /* définit les marges horizontales de la section principale */
     margin: 0 20vw;
+    /* définit la hauteur minimale de la section principale à 100% de la hauteur de la fenêtre */
     min-height: 100vh;
+    /* affiche les éléments de la section principale en ligne */
     display: flex;
+    /* oriente les éléments de la section principale en colonne */
     flex-direction: column;
+    /* centre les éléments de la section principale verticalement */
     justify-content: center;
+    /* centre les éléments de la section principale horizontalement */
     align-items: center;
 }
 
@@ -78,28 +115,40 @@ h2 {
 }
 
 .more-btn {
+    /* affiche les éléments du bouton en ligne */
     display: flex;
+    /* centre les éléments du bouton verticalement */
     align-items: center;
+    /* centre les éléments du bouton horizontalement */
     justify-content: center;
+    /* définit la couleur de fond du bouton */
     background-color: #fff;
+    /* définit les marges intérieures du bouton */
     padding: 10px;
+    /* arrondit les coins du bouton */
     border-radius: 30px;
     height: 30px;
     width: 30px;
+    /* ajoute une ombre au bouton */
     box-shadow: 0px 0px 5px 1px #fff;
     margin-top: 10px;
+    /* ajoute une transition lors du changement de couleur et de position du bouton */
     transition: 0.5s ease-in-out;
-
 }
 
 .more-btn:hover {
+    /* déplace le bouton vers le haut lors du survol de la souris */
     transform: translateY(-5px);
+    /* définit la couleur de fond du bouton lors du survol de la souris */
     background-color: #d9ebff;
 }
 
 .main-section {
+    /* affiche les éléments de la section principale en ligne */
     display: flex;
+    /* centre les éléments de la section principale verticalement */
     align-items: center;
+    /* définit la hauteur minimale de la section principale à 100% de la hauteur de la fenêtre */
     min-height: 100vh;
     background-color: #2897ff;
 }
@@ -110,6 +159,7 @@ a {
     text-decoration: none;
     border-radius: 5px;
     padding: 2px;
+    /* ajoute une transition lors du changement d'état*/
     transition: 0.3s linear;
 }
 
@@ -122,18 +172,25 @@ a:hover {
     padding: 10px;
     color: #1080ff;
     background-color: #fff;
+    /* affiche le bouton en ligne avec les autres éléments */
     display: inline-block;
 }
 
 .tip {
+    /* affiche les éléments du conseil en ligne */
     display: flex;
+    /* centre les éléments du conseil verticalement */
     align-items: center;
+    /* définit la hauteur minimale du conseil à 100% de la hauteur de la fenêtre */
     min-height: 100vh;
+    /* définit les marges horizontales du conseil */
     padding: 0 15vw;
+    /* centre les éléments du conseil horizontalement */
     justify-content: center;
 }
 
 .right {
+    /* inverse l'ordre des éléments du conseil */
     flex-direction: row-reverse;
 }
 
@@ -147,12 +204,10 @@ a:hover {
 
 .bg-green {
     background-color: #00a1ad;
-
 }
 
 .bg-ygreen {
     background-color: #08962b;
-
 }
 
 .highlight {
@@ -193,18 +248,25 @@ a:hover {
 }
 
 .middle-section {
+    /* définit la hauteur minimale de la section à 50% de la hauteur de la fenêtre */
     min-height: 50vh;
+    /* affiche les éléments de la section en ligne */
     display: flex;
+    /* oriente les éléments de la section en colonne */
     flex-direction: column;
+    /* centre les éléments de la section verticalement */
     align-items: center;
+    /* centre les éléments de la section horizontalement */
     justify-content: center;
 }
 
 .big-text {
+    /* définit la taille de la police du texte à très grande */
     font-size: xx-large;
 }
 
 .inline {
+    /* affiche les éléments ayant cette classe en ligne avec les autres éléments */
     display: inline-block;
 }
 
