@@ -27,7 +27,7 @@ body {
     justify-content: center;
 }
 
-#navbar {
+nav {
     background-color: #51dd00;
     /* affiche les éléments de la barre de navigation en ligne */
     display: flex;
