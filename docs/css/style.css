@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-    background-color: #51dd00;
+    background-color: #2E987C;
     /* affiche les éléments de la barre de navigation en ligne */
     display: flex;
     /* centre les éléments de la barre de navigation verticalement */
@@ -76,12 +76,12 @@ header {
     /* définit la couleur de fond des liens du menu lors du survol de la souris */
     background-color: #fff;
     /* définit la couleur du texte des liens du menu lors du survol de la souris */
-    color: #51dd00;
+    color: #2E987C;
 }
 
 .menu .selected {
     background-color: #fff;
-    color: #51dd00;
+    color: #2E987C;
 }
 
 .text-center {
@@ -154,7 +154,7 @@ h2 {
 }
 
 a {
-    color: #51dd00;
+    color: #2E987C;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -164,7 +164,7 @@ a {
 }
 
 a:hover {
-    background-color: #51dd00;
+    background-color: #2E987C;
     color: #fff;
 }
 
@@ -213,7 +213,7 @@ a:hover {
 .highlight {
     padding: 5px;
     background-color: #fff;
-    color: #51dd00;
+    color: #2E987C;
     border-radius: 10px;
 }
 
@@ -276,4 +276,66 @@ a:hover {
 
 .rounded {
     border-radius: 20px;
+}
+
+footer {
+    min-height: 25vh;
+    /* affiche les éléments selon une grille */
+    display: grid;
+    align-items: stretch;
+    align-content: center;
+    /* créer deux colonnes égalesn c'est ce que permet l'unité fr */
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2C313A;
+    color: #08962b;
+}
+
+footer section {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link {
+    font-weight: normal;
+    color: #08962b;
+    margin: 0px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #2E987C;
+}
+
+.index-img {
+    background: url('../images/bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.img-header {
+    color: #223231;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    max-width: 50vw;
+
+}
+
+.text-xxl {
+    font-size: xx-large;
+}
+
+#index-section {
+    background-color: #14171B;
+}
+
+.side-img {
+    max-width: 50vw;
+    min-height: 100vh;
+    object-fit: cover;
+    margin-right: 10px;
 }
