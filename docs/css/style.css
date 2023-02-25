@@ -178,20 +178,14 @@ a:hover {
 
 .tip {
     /* affiche les éléments du conseil en ligne */
-    display: flex;
+    display: grid;
     /* centre les éléments du conseil verticalement */
     align-items: center;
     /* définit la hauteur minimale du conseil à 100% de la hauteur de la fenêtre */
     min-height: 100vh;
-    /* définit les marges horizontales du conseil */
-    padding: 0 15vw;
-    /* centre les éléments du conseil horizontalement */
-    justify-content: center;
-}
-
-.right {
-    /* inverse l'ordre des éléments du conseil */
-    flex-direction: row-reverse;
+    margin: 0px;
+    /* définit deux colonnes à largeurs égales*/
+    grid-template-columns: 50vw 50vw;
 }
 
 .bg-blue {
@@ -208,6 +202,26 @@ a:hover {
 
 .bg-ygreen {
     background-color: #08962b;
+}
+
+.bg-dgreen {
+    background-color: #287960;
+}
+
+.bg-brown-gr {
+    background: linear-gradient(0deg, rgba(101, 56, 67, 1) 0%, rgba(75, 32, 42, 1) 100%);
+}
+
+.bg-gradient1 {
+    background: linear-gradient(210deg, rgba(10, 59, 61, 1) 0%, rgba(103, 171, 130, 1) 100%);
+}
+
+.bg-gradient2 {
+    background: linear-gradient(210deg, rgba(59, 71, 57, 1) 0%, rgba(121, 159, 118, 1) 100%);
+}
+
+.bg-gray {
+    background: #557077
 }
 
 .highlight {
@@ -233,6 +247,10 @@ a:hover {
     box-shadow: 0px 0px 50px 0px #0153b160;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .table ul {
     list-style: none;
     display: flex;
@@ -245,6 +263,10 @@ a:hover {
 .table ul li a {
     padding: 5px;
     display: block;
+}
+
+.main-text {
+    margin: 0px 10px;
 }
 
 .middle-section {
@@ -334,8 +356,15 @@ footer section {
 }
 
 .side-img {
-    max-width: 50vw;
+    width: 50vw;
     min-height: 100vh;
     object-fit: cover;
-    margin-right: 10px;
+}
+
+#tip-header {
+    background: url('../images/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
 }
