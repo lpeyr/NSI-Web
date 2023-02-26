@@ -50,6 +50,7 @@ header {
     display: flex;
     /* centre les éléments de l'en-tête horizontalement */
     justify-content: center;
+    z-index: 1000;
 }
 
 .menu li {
