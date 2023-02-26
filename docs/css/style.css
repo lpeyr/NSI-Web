@@ -204,6 +204,10 @@ a:hover {
     background-color: #08962b;
 }
 
+.bg-yellow {
+    background: linear-gradient(180deg, rgba(234, 176, 50, 1) 0%, rgba(229, 199, 25, 1) 100%);
+}
+
 .bg-dgreen {
     background-color: #287960;
 }
@@ -223,6 +227,7 @@ a:hover {
 .bg-gray {
     background: #557077
 }
+
 
 .highlight {
     padding: 5px;
@@ -365,6 +370,54 @@ footer section {
     background: url('../images/bg2.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+#trash-header {
+    background: url('../images/poubelle.png');
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.eolienne {
+    background: url('../images/energies_vertes.jpeg');
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+.text-half {
+    max-width: 45vw;
+    margin: 0px 10px;
+}
+
+#trash-section {
+    background: url('../images/dechets.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+#globe-section {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.7)), url('../images/globe.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+#energies-header {
+    background: url('../images/energies.png');
+    background-size: cover;
+    background-position: left;
     background-attachment: fixed;
     margin: 0px;
 }
