@@ -84,6 +84,10 @@ header {
     color: #2E987C;
 }
 
+.menu .light-selected {
+    background-color: #40b696;
+}
+
 .text-center {
     /* centre le texte des éléments ayant cette classe */
     text-align: center;

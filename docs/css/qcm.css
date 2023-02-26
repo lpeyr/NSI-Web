@@ -1,0 +1,12 @@
+.qcm {
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.qcm-option {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2E987C;
+}
