@@ -13,4 +13,13 @@
 
 .qcm-item {
     padding: 5px;
+    background-color: #bafae9;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Sélectionne les éléments qcm-item qui ont un input radio coché comme enfant */
+.qcm-item:has(input[type="radio"]:checked) {
+    background-color: #2E987C;
+    color: #fff;
 }
