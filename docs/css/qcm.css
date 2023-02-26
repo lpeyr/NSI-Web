@@ -9,17 +9,31 @@
     border-radius: 10px;
     background-color: #fff;
     color: #2E987C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.qcm-item {
-    padding: 5px;
+.qcm-item {}
+
+/* Sélectionne les éléments qcm-item qui ont un input radio coché comme enfant */
+input[type="radio"]:checked~label {
+    background-color: #2E987C;
+    color: #fff;
+}
+
+input[type="radio"] {
+    visibility: collapse;
+    width: 0;
+    height: 0;
+}
+
+input[type="radio"]~label {
+    padding: 10px 5px;
     background-color: #bafae9;
     border-radius: 10px;
     margin: 5px;
-}
-
-/* Sélectionne les éléments qcm-item qui ont un input radio coché comme enfant */
-.qcm-item:has(input[type="radio"]:checked) {
-    background-color: #2E987C;
-    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    width: 75vw;
 }
