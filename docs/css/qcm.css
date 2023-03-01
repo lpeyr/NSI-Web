@@ -56,3 +56,11 @@ input[type="radio"]~label {
 input[type="radio"]~label:hover {
     background-color: #42d1abcc;
 }
+
+.qcm-img {
+    background: url('../images/check.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0px;
+}
