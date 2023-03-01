@@ -10,8 +10,6 @@
 }
 
 body {
-    /* définit la couleur de fond du corps de la page */
-    background-color: #1080ff;
     /* définit la couleur du texte du corps de la page */
     color: #fff;
 }
@@ -193,16 +191,13 @@ a:hover {
     grid-template-columns: 50vw 50vw;
 }
 
-.bg-blue {
-    background-color: #2897ff;
-}
 
 .bg-cyan {
     background-color: #00b7ff;
 }
 
-.bg-green {
-    background-color: #00a1ad;
+.bg-sky {
+    background: linear-gradient(45deg, #D8D830 0%, rgba(18, 41, 58, 1) 100%);
 }
 
 .bg-ygreen {
@@ -276,7 +271,7 @@ main {
 }
 
 .main-text {
-    margin: 0px 10px;
+    margin: 0px 15px;
 }
 
 .middle-section {
@@ -425,4 +420,33 @@ footer section {
     background-position: left;
     background-attachment: fixed;
     margin: 0px;
+}
+
+#damn {
+    background: url('../images/barrage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: 0px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+img {
+    transition: all 1s;
+}
+
+.img-container {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.blur {
+    padding: 5%;
+    backdrop-filter: blur(16px);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
