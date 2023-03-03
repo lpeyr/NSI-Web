@@ -5,9 +5,6 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
-
-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +39,7 @@ input[type="radio"] {
     height: 0;
 }
 
-input[type="radio"]~label {
+.neutral {
     padding: 10px 5px;
     background-color: #2e987c88;
     border-radius: 10px;
@@ -53,7 +50,7 @@ input[type="radio"]~label {
     transition: all 0.5s;
 }
 
-input[type="radio"]~label:hover {
+.neutral:hover {
     background-color: #42d1abcc;
 }
 
@@ -63,4 +60,37 @@ input[type="radio"]~label:hover {
     background-attachment: fixed;
     background-position: center;
     margin: 0px;
+}
+
+input[type="button"] {
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    background: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+input[type="button"]:hover {
+    background: #42d1ab;
+    color: white;
+}
+
+.wrong~label {
+    background-color: #ff434388;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 70vw;
+    transition: all 0.5s;
+}
+
+.wrong:checked~label {
+    background-color: #f54848;
+    color: #fff;
 }
