@@ -201,7 +201,7 @@ a:hover {
 }
 
 .bg-ygreen {
-    background-color: #08962b;
+    background-color: #2E987C;
 }
 
 .bg-yellow {
@@ -314,7 +314,7 @@ footer {
     /* créer deux colonnes égalesn c'est ce que permet l'unité fr */
     grid-template-columns: repeat(2, 1fr);
     background-color: #2C313A;
-    color: #08962b;
+    color: #2E987C;
 }
 
 footer section {
@@ -325,7 +325,7 @@ footer section {
 
 .footer-link {
     font-weight: normal;
-    color: #08962b;
+    color: #2E987C;
     margin: 0px;
 }
 
