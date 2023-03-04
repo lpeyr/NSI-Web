@@ -17,14 +17,14 @@ function submit() {
     let prompt = "Je suis GreenFutur, un expert sur le climat, la nature et l'écologie. Je donne des conseils et je tchat avec respect avec les utilisateurs. J'utilise les émojis. Je donne souvent des sources. Je mets en forme les liens, les listes, les tableaux en HTML car je sais le faire (je ne le dis pas à l'humain). Je commence mes réponses par GreenFutur :\n\nHuman: "
 
     // pour permettre d'avoir une conversation, l'historique des messages est stocké dans le local storage
-    if (!localStorage.getItem("chat")) {
-        localStorage.setItem("chat", prompt); // si l'historique est vide, alors mettre les instructions par défaut
+    if (!localStorage.getItem("chat_nsi")) {
+        localStorage.setItem("chat_nsi", prompt); // si l'historique est vide, alors mettre les instructions par défaut
     }
     document.getElementById("SendBtn").classList.add("dis"); // cache le bouton lors d'une requête
 
     appendMessage(document.getElementById("ChatTxt").value, true); // affiche le message entré
-    localStorage.setItem("chat", localStorage.getItem("chat") + document.getElementById("ChatTxt").value);
-    send(localStorage.getItem("chat"));
+    localStorage.setItem("chat_nsi", localStorage.getItem("chat_nsi") + document.getElementById("ChatTxt").value);
+    send(localStorage.getItem("chat_nsi"));
 }
 
 // affiche un message dans la chat box. Des styles sont appliqués en fonction de l'auteur du message (isUser)
@@ -85,14 +85,14 @@ function send(msg) {
         .then((data) => {
 
             appendMessage(data.choices[0].text);
-            localStorage.setItem("chat", localStorage.getItem("chat") + "\n\nGreenFutur : " + data.choices[0].text + "\n\nHuman: ");
+            localStorage.setItem("chat_nsi", localStorage.getItem("chat_nsi") + "\n\nGreenFutur : " + data.choices[0].text + "\n\nHuman: ");
             document.getElementById("SendBtn").classList.remove("dis");
             if (!localStorage.getItem("pwr")) localStorage.setItem("pwr", document.getElementById("KeyTxt").value)
         })
         .catch((error) => {
             // Si une erreur se produit, réinitialise la conversation
             console.error(error);
-            localStorage.removeItem("chat");
+            localStorage.removeItem("chat_nsi");
             appendMessage("Oups, une erreur s'est produite, la conversation s'est réinitialisée.");
             document.getElementById("SendBtn").classList.remove("dis");
 
@@ -100,7 +100,7 @@ function send(msg) {
 }
 
 function reset() {
-    localStorage.removeItem("chat");
+    localStorage.removeItem("chat_nsi");
     document.getElementById("chatbox").innerHTML = "";
     appendMessage("La conversation s'est réinitialisée.");
     document.getElementById("SendBtn").classList.remove("dis");
