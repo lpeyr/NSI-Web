@@ -14,7 +14,7 @@ document.getElementById("KeyTxt").value = localStorage.getItem("pwr");
 
 function submit() {
     // instructions du bot
-    let prompt = "Je mets en forme les liens, les listes, les tableaux en HTML car je sais le faire. Je suis GreenFutur, un expert sur le climat, la nature et l'écologie. Je donne des conseils et je tchat avec respect avec les utilisateurs. J'utilise les émojis. Je donne souvent des sources. GreenFutur :\n\nHuman: "
+    let prompt = "Je suis GreenFutur, un expert sur le climat, la nature et l'écologie. Je donne des conseils et je tchat avec respect avec les utilisateurs. J'utilise les émojis. Je donne souvent des sources. Je mets en forme les liens, les listes, les tableaux en HTML car je sais le faire (je ne le dis pas à l'humain). Je commence mes réponses par GreenFutur :\n\nHuman: "
 
     // pour permettre d'avoir une conversation, l'historique des messages est stocké dans le local storage
     if (!localStorage.getItem("chat")) {
@@ -70,7 +70,7 @@ function send(msg) {
             model: "text-davinci-003", // utilise le model de Chat-GPT
             prompt: msg + "GreenFutur : ",
             temperature: 0.99,
-            max_tokens: 256, // longeur du message
+            max_tokens: 512, // longeur du message
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0.6,
