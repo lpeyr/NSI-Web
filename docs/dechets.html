@@ -88,7 +88,8 @@
 
 		<section id="globe-section" class="text-center head-section">
 			<h2>Les déchets a l'échelle mondiale</h2>
-			<p>À l'échelle mondiale, les déchets représentent un véritable défi pour l'environnement et la santé
+			<p>À l'échelle mondiale, les déchets représentent un véritable défi pour
+				l'environnement et la santé
 				publique.
 				Chaque année, des milliards de tonnes de déchets sont produits dans le monde, mettant en péril la
 				qualité de
@@ -113,6 +114,43 @@
 				quantité augmente chaque année en raison de la croissance démographique et de l'urbanisation.
 			</p>
 		</section>
+		<section class="head-section bg-gray text-center">
+			<h2>Calculez vos émissions</h2>
+			<p>Découvrez la quantité de CO<sub>2</sub> que vous rejeter en fonction de la distance que vous parcourez.
+			</p>
+			<br>
+			<div class="table text-green">
+				<ul>
+					<li>
+						<input name="calculateur" id="marche" type="radio" onchange="valueChanged()">
+						<label class="neutral" for="marche">A pied</label>
+					</li>
+					<li>
+						<input name="calculateur" id="voiture" type="radio" onchange="valueChanged()" checked>
+						<label class="neutral" for="voiture">Voiture</label>
+					</li>
+					<li>
+						<input name="calculateur" id="elec" type="radio" onchange="valueChanged()">
+						<label class="neutral" for="elec">Voiture électrique</label>
+					</li>
+					<li>
+						<input name="calculateur" id="tc" type="radio" onchange="valueChanged()">
+						<label class="neutral" for="tc">Bus</label>
+					</li>
+				</ul>
+			</div>
+			<input type="range" id="slider" onchange="valueChanged()">
+			<p>Sur <span id="distance">0</span>km, Vous auriez consommé <span id="masse">0</span>kg de
+				CO<sub>2</sub>
+				<sup>
+					<a class="text-white"
+						href="https://www.aramisauto.com/aide/faq?question=combien-demissions-co2-fabriquer-voiture-electrique">1</a>
+					<a class="text-white"
+						href="https://www.vroomly.com/blog/emissions-co2-voiture-normes-taxes-simulateur/#:~:text=Les%20%C3%A9missions%20de%20CO2%20d%27une%20voiture%20essence%20consommant,service%20public.%20Le%20simulateur%20vous%20demandera%20d%27indiquer%20%3A">2</a>
+					<a class="text-white" href="https://youmatter.world/fr/avion-pollution-voiture-comparaison/">3</a>
+				</sup>
+			</p>
+		</section>
 	</main>
 	<footer>
 		<section>
@@ -132,6 +170,7 @@
 			<a class="footer-link" href="https://theoceancleanup.com/">The Ocean Cleanup</a>
 		</section>
 	</footer>
+	<script src="scripts/slider.js"></script>
 	<script src="scripts/footer.js"></script>
 
 </body>
