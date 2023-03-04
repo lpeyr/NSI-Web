@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>GreenFutur</title>
+    <link rel='icon' type='img/ico' href='favicon.ico' />
+    <link rel='stylesheet' href='css/style.css' />
+    <link rel='stylesheet' href='css/chat.css' />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="text-white">GreenFutur</h1>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="astuces.html">Astuces</a>
+                </li>
+                <li><a href="dechets.html">Nos déchets</a></li>
+                <li><a href="energies.html">Les énergies</a></li>
+                <li><a href="qcm.html">QCM</a></li>
+                <li><a class="selected" href="#">Chat</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="container index-img">
+            <h2 class=" animated-icon">Chat</h2>
+            <p>Apprenez-en plus avec notre assistant GreenFutur !</p>
+            <br>
+            <div id="chatbox"></div>
+            <div class="bg-blur">
+                <div class="chat-controls">
+                    <label for="KeyTxt">Clé</label>
+                    <input type="password" class="pswr" name="Request" id="KeyTxt">
+                </div>
+                <div class="chat-controls">
+                    <input type="text" name="Request" id="ChatTxt">
+                    <input id="SendBtn" type="button" class="btn" value="Send" onclick="submit()">
+                    <input type="button" class="btn" value="Reset" onclick="reset()">
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h3>A propos</h3>
+            <p id="copyright">Copyright © GreenFutur</p>
+            <p>
+                Ce(tte) œuvre est mise à
+                disposition selon les termes de la <a class="footer-link" rel="license"
+                    href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licence Creative Commons Attribution - Pas
+                    d&#39;Utilisation Commerciale - Pas de Modification 4.0 International.</a>
+            </p>
+        </section>
+        <section>
+            <h3>En savoir plus</h3>
+            <a class="footer-link" href="https://www.midjourney.com/">Illustrations</a>
+            <a class="footer-link" href="https://www.greenpeace.fr/">GreenPeace</a>
+            <a class="footer-link" href="https://theoceancleanup.com/">The Ocean Cleanup</a>
+        </section>
+    </footer>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+
+</html>

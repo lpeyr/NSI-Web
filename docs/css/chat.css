@@ -1,0 +1,149 @@
+body {
+    color: #223231;
+}
+
+#chatbox {
+    height: 75vh;
+    backdrop-filter: blur(16px);
+    background: #9cd6c46b;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    background: #2C313A;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2E987C;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px 0px 5px 5px;
+    border-radius: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2E987C;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background: #287960;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    border: solid 1px white;
+    background: none;
+    color: #223231;
+    width: 100%;
+}
+
+input[type="password"] {
+    margin: 5px;
+}
+
+.msg {
+    padding: 4px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #2E987C;
+    color: white;
+    font-weight: bold;
+}
+
+.ia-msg {
+    padding: 4px;
+    margin: 5px;
+    border-radius: 10px;
+    background: white;
+    color: #287960;
+    font-weight: bold;
+}
+
+.left {
+    align-self: flex-start;
+    min-width: 25%;
+    max-width: 50%;
+    margin: 10px;
+}
+
+.right {
+    align-self: flex-end;
+    margin: 10px;
+    min-width: 25%;
+    max-width: 50%;
+}
+
+.chat-controls {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blur {
+    margin-top: 10px;
+    backdrop-filter: blur(16px);
+    background: #9cd6c46b;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.dis {
+    width: 0;
+    height: 0;
+    visibility: collapse;
+}
+
+p {
+    margin: 10px;
+}
+
+.username {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container>h2 {
+    margin-top: 140px;
+}
+
+li {
+    margin-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+table,
+td,
+th {
+    border: solid 1px #2E987C;
+    padding: 5px;
+}
+
+th {
+    color: white;
+    background-color: #2E987C;
+}
