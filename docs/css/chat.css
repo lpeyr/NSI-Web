@@ -14,16 +14,6 @@ body {
     overflow-y: scroll;
 }
 
-::-webkit-scrollbar {
-    background: #2C313A;
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #2E987C;
-    border-radius: 10px;
-}
-
 .btn {
     padding: 10px;
     margin: 5px 0px 5px 5px;
@@ -127,7 +117,7 @@ p {
     margin-top: 140px;
 }
 
-li {
+#chatbox li {
     margin-left: 10px;
 }
 

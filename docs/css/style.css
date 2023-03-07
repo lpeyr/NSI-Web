@@ -476,3 +476,13 @@ input[type="range"] {
 .text-white {
     color: white;
 }
+
+::-webkit-scrollbar {
+    background: #2C313A;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2E987C;
+    border-radius: 10px;
+}

@@ -1,3 +1,4 @@
+valueChanged();
 function valueChanged() {
     let distance = document.getElementById("distance");
     let masse = document.getElementById("masse");
